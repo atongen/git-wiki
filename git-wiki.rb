@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'fileutils'
-require 'environment'
-require 'sinatra/lib/sinatra'
+require ENV['WIKI_HOME'] + '/environment'
 
 get('/') { redirect "/#{HOMEPAGE}" }
 
